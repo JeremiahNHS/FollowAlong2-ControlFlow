@@ -24,7 +24,7 @@ public class Challenge {
     //   canPlay(true, true, 21)    → false   too late
     //   canPlay(true, false, 7)    → false   too early
     public static boolean canPlay(boolean homeworkDone, boolean isWeekend, int hour) {
-        return false;   // YOUR CODE — use && and ||
+        return ((homeworkDone || isWeekend) && (hour >= 8 && hour < 21));
     }
 
     // Problem 2 — digitCount
@@ -39,6 +39,16 @@ public class Challenge {
     // Hint: n / 10 chops off the last digit. 12345 / 10 is 1234.
     // Use a while loop that keeps chopping and counts how many times.
     public static int digitCount(int n) {
-        return 0;   // YOUR CODE — use a while loop
+        int digits = n;
+        int count = 0;
+
+        if (n == 0){
+            return 1;
+        }
+        while (digits > 0) {
+            digits = digits / 10;
+            count++;
+        }
+        return count;   // YOUR CODE — use a while loop
     }
 }
