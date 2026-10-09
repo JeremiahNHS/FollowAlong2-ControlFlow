@@ -14,5 +14,11 @@ package part08;
 //    saying in YOUR OWN WORDS what that line does. The README shows an example.
 
 public class ForLoops {
-
+    public static void main(String[] args){
+        for (int i = 10; i >= 0;) {
+            System.out.println(i);
+            i -= 2;
+        }
+        System.out.println("Happy New Year!");
+    }
 }
