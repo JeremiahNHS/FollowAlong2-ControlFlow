@@ -10,6 +10,21 @@ public class InClass {
     public static void main(String[] args) {
 
         // STEP 1 — we build the sensor sweep and the parking map together, here.
+        System.out.println("=== SENSOR SWEEP ===");
+        for (int angle = 0; angle <= 180; angle += 45) {
+            System.out.println("Scanning at " + angle + " degrees");
+        }
+        System.out.println("=== PARKING MAP ===");
+
+        for (int i = 1; i <= 3; i++){
+            System.out.print("Row " + i + ": ");
+            for (int j = 5; j > 0; j--){
+                System.out.print("[ ]");
+            }
+            System.out.println();
+        }
+
+
 
 
 
@@ -17,25 +32,25 @@ public class InClass {
         // Do ONE bug at a time: delete its /* line and its */ line, so Java sees it.
         // Read the red error. Fix it. Run it. Then do the next bug.
 
-        /*
-        for (int i = 1, i <= 5, i++) {
+
+        for (int i = 1; i <= 5; i++) {
             System.out.println(i);
         }
-        */
 
-        /*
+
+
         for (int i = 1; i <= 3; i++) {
-            for (int i = 1; i <= 4; i++) {
+            for (int j = 1; j <= 4; j++) {
                 System.out.print("[ ]");
             }
             System.out.println();
         }
-        */
 
-        /*
-        for (int angle = 0; angle <= 180; angle += 45); {
+
+
+        for (int angle = 0; angle <= 180; angle += 45) {
             System.out.println("Scanning at " + angle + " degrees");
         }
-        */
+
     }
 }
