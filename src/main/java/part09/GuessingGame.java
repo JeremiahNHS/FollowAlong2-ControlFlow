@@ -1,4 +1,6 @@
 package part09;
+import java.util.Scanner;
+import java.util.Random;
 
 // Part 09 — CHECKPOINT. No video in this part.
 // Video (only if you need a reminder): https://www.youtube.com/watch?v=xk4_1vDrzzo
@@ -14,5 +16,24 @@ package part09;
 //    saying in YOUR OWN WORDS what that line does.
 
 public class GuessingGame {
+    public static void main(String[] args){
+        Random random = new Random();
+        Scanner scanner = new Scanner(System.in);
+        int randInt = random.nextInt(100) + 1;
+        int guess = 0;
+        System.out. println("I'm thinking of a number between 1 and 100.");
+        int attempts = 0;
 
+        while (guess != randInt){
+            System.out.print("Your guess: ");
+            guess = scanner.nextInt();
+            attempts += 1;
+            if (guess > randInt){
+               System.out.println("Too high!");
+           } else if (guess < randInt){
+               System.out.println("Too low!");
+           }
+        }
+        System.out.println("Correct! You got it in " + attempts + " guesses.");
+    }
 }
