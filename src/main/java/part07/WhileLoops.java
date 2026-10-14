@@ -1,4 +1,5 @@
 package part07;
+// imports the scanner tool from the java utilities folder
 import java.util.Scanner;
 
 // Video: https://www.youtube.com/watch?v=xk4_1vDrzzo&t=5302s

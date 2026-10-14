@@ -1,4 +1,5 @@
 package part08;
+// imports the scanner tool from the java utilities folder
 import java.util.Scanner;
 
 // Video: https://www.youtube.com/watch?v=xk4_1vDrzzo&t=5836s
@@ -15,7 +16,7 @@ import java.util.Scanner;
 // SECTION B — COMMENTS: when you finish, put a // comment ABOVE every line of code,
 //    saying in YOUR OWN WORDS what that line does. The README shows an example.
 
-import java.util.Scanner;
+
 // defines the name of the class
 public class NestedLoops {
     // the main method lets java know this is the start of the program and makes it executable
